@@ -24,7 +24,7 @@ const Index = () => {
     };
 
     try {
-      const response = await fetch("/onboarding", {
+      const response = await fetch("https://urbanbranch-backend.onrender.com/onboarding", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

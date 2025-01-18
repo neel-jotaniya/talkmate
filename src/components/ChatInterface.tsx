@@ -40,7 +40,7 @@ export const ChatInterface = ({ userId }: ChatInterfaceProps) => {
     setIsLoading(true);
 
     try {
-      const response = await fetch("/chat", {
+      const response = await fetch("https://urbanbranch-backend.onrender.com/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
