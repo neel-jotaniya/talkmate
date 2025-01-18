@@ -1,69 +1,71 @@
-# Welcome to your Lovable project
+# AI Chat Personality Application Frontend
 
-## Project info
+## Description
+The frontend for the AI Chat Personality Application is built using React, Tailwind CSS, and Vite. It provides an intuitive interface for users to interact with the AI chat application, manage their profiles, and view their chat history. The design ensures a seamless user experience, leveraging modern technologies for speed, scalability, and responsiveness.
 
-**URL**: https://lovable.dev/projects/8eed061e-2039-4083-82bd-e02cfc70dbed
+## Key Features
+- User-friendly interface for onboarding and chatting
+- Responsive design using Tailwind CSS
+- High-performance development environment with Vite
+- Integration with Flask backend for real-time chat functionality
 
-## How can I edit this code?
 
-There are several ways of editing your application.
+## Technologies Used
+- **React**: For building the user interface
+- **Tailwind CSS**: For styling the application
+- **Vite**: For a fast and efficient development environment
 
-**Use Lovable**
+## Installation
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8eed061e-2039-4083-82bd-e02cfc70dbed) and start prompting.
+### Prerequisites:
+- Node.js (v16 or later)
+- NPM (v8 or later) or Yarn
 
-Changes made via Lovable will be committed automatically to this repo.
+### Steps to Install and Run:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/neel-jotaniya/talkmate.git
+   cd talkmate
+   ```
 
-**Use your preferred IDE**
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+3. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+4. Open the application in your browser:
+   Navigate to `http://localhost:5173`.
 
-Follow these steps:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Available Scripts
+- `npm run dev`: Starts the development server
+- `npm run build`: Builds the application for production
+- `npm run preview`: Previews the production build
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Deployment
+1. Build the application:
+   ```bash
+   npm run build
+   # or
+   yarn build
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+2. Deploy the `dist` folder to your preferred hosting platform (e.g., Firebase Hosting, Netlify, Vercel).
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## API Endpoints
+The frontend communicates with the backend through the following endpoints:
 
-**Edit a file directly in GitHub**
+### Chat
+- `POST /chat`: Send and receive chat messages
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/8eed061e-2039-4083-82bd-e02cfc70dbed) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+### Onboarding
+- `POST /onboarding`: Submit user details and personality questionnaire
